@@ -1,0 +1,198 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.left {
+  flex: 2;
+}
+
+.table {
+  width: 100%;
+  text-align: center; /* Center text content within the table */
+  border-collapse: collapse; /* Optional: Remove default spacing between table cells */
+}
+
+.trTitle th {
+  padding: 10px;
+  color: rgb(3, 83, 83); /* Add some padding for better visual appearance */
+  font-size: larger;
+}
+
+.tr, .trTitle {
+  border-bottom: 1px solid #ddd; /* Optional: Add a bottom border to separate rows */
+ 
+}
+
+.imgContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.name {
+  font-weight: bolder;
+  color: #d1411e;
+  font-size: 20px;
+}
+
+.extras, .price, .quantity, .total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price, .quantity, .total {
+  font-weight: 500;
+}
+.right {
+  flex: 1;
+  width: 40%; /* Increase the width to 40% of the container */
+}
+
+.wrapper {
+  width: 100%;
+  height: 300px; /* Increase the height to 400px */
+  max-height: 500px; /* Set a maximum height if needed */
+  background-color: #333;
+  padding: 50px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: center; 
+  border: 5px solid rgb(161, 117, 21);
+  border-radius: 20px;/* Center text content within the wrapper */
+}
+.title {
+  margin-bottom: 20px;
+
+ font-size: 30px;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+  font-size: large;
+}
+
+.button {
+  height: 40px;
+  color: #d11e1e;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+
+}
+.paymentMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payButton {
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background-color: white;
+  color: teal;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%; /* Set both the left and right sections to 100% width */
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .imgContainer {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .name,
+  .total {
+    font-size: 24px;
+  }
+
+  .extras,
+  .price,
+  .quantity {
+    font-size: 22px;
+  }
+
+  /* Add pseudo-elements to label the information */
+  .price::before {
+    content: "Price: ";
+    font-weight: 500;
+  }
+  .quantity::before {
+    content: "Quantity: ";
+    font-weight: 500;
+  }
+  .total::before {
+    content: "Total: ";
+    font-weight: 500;
+  }
+
+  .wrapper {
+    width: 100%; /* Ensure the wrapper takes the full width */
+    height: auto; /* Remove fixed height */
+    max-height: none; /* Remove maximum height */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .title {
+    margin-bottom: 10px; /* Adjust margin */
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .totalTextTitle {
+    margin-right: 5px; /* Adjust margin */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .button {
+    height: 35px; /* Adjust height */
+    font-size: 18px; /* Adjust font size */
+    margin-top: 10px; /* Adjust margin */
+  }
+
+  .paymentMethods {
+    margin-top: 5px; /* Adjust margin */
+  }
+
+  .payButton {
+    padding: 8px 5px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+}

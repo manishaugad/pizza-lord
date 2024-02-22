@@ -1,0 +1,99 @@
+.container {
+  padding: 20px; /* Reduce padding for smaller screens */
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+}
+
+.title {
+  color: rgb(14, 14, 211);
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto; /* Center the table */
+  margin-right: auto; /* Center the table */
+}
+
+.trTitle th {
+  padding: 10px;
+  color: rgb(3, 83, 83);
+  font-size: larger;
+}
+
+.tr,
+.trTitle {
+  border-bottom: 3px solid #ddd;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.trs {
+  margin-bottom: 18px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button1,
+.button2 {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  width: 100px;
+  border: 3px solid goldenrod;
+  font-weight: bold;
+}
+
+.button1 {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduce padding for smaller screens */
+  }
+  .payment-column {
+    display: none; /* Hide the payment column */
+  }
+  .button1,
+  .button2 {
+    width: 80px; /* Adjust button width */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .title {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .tr,
+  .trTitle {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .table {
+    font-size: 14px; /* Adjust font size */
+  }
+}
